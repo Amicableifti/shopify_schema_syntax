@@ -1,0 +1,52 @@
+{% schema %}
+{
+  "name": "Default Name ",
+  "settings": [
+    {
+      "type": "color",
+      "id": "colorBackground",
+      "label": "Background color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Side Color",
+      "default": "#fff"
+    },
+  
+    {
+  "type": "number",
+  "id": "adjust_speed",
+  "label": "Adjust Speed",
+  "default": 30
+}
+  
+  ],
+    "blocks": [
+    {
+      "type": "text",
+      "name": "Logo",
+      "limit": 20,
+      "settings": [
+         {
+          "type": "image_picker",
+          "id": "new_logo",
+          "label": "Image"
+         
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Default Name",
+      "blocks": [
+        {
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}
